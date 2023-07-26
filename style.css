@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-image: url("poker_background.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.countdown-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#countdown {
+    font-size: 72px; /* Ändere die Schriftgröße auf 72px */
+    color: rgb(6, 7, 28); /* Ändere die Textfarbe auf Weiß */
+    text-shadow: 2px 2px 4px rgba(38, 12, 11, 0.5); /* Füge einen Schatten hinzu, um den Text hervorzuheben */
+}
