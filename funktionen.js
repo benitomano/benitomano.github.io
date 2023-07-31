@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const buttons = document.querySelectorAll("button");
 
     buttons.forEach(function (button) {
-        button.addEventListener("click", function () {
+        button.addEventListener("touch", function () {
             const soundFile = button.getAttribute("data-sound");
             playSound(soundFile);
         });
