@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   
+    <meta charset="UTF-8"> <!--Kodierung der Zeichen-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> QuickTunes </title>
+    <style>
+        body { /* wir sprechen alle body elemente direkt an*/
+            background-color: rgb(39, 37, 37); /* hintergrundfarbe */
+            padding-left: 120px;
+            padding-right: 120px;
+            padding-top: 50px;
+        }
+        .top-part {
+            display: flex; /* flexbox erstellen */
+            justify-content: space-between; /* x-achse anordnung */
+            padding: 15px;
+            padding-left: 40px;
+            border: 3px solid transparent;
+            border-image: linear-gradient(to right, rgb(186,57,191), rgb(53, 133, 190)); 
+            border-image-slice: 1;
+        }
+
+        .headline {
+            color: rgb(186, 57, 191);
+            font-size: 53px;
+        }
+
+        .creator {
+            color: rgb(53, 133, 190);
+            font-size: 30px;
+        }
+
+        .logo {
+            width: 17%;
+            height: 17%;
+        }
+
+        .benito-text {
+            color: rgb(186, 57, 191);
+            font-size: 40px;
+        }
+
+        .benito-text-container {
+            border-bottom: 2px solid transparent; 
+            border-image: linear-gradient(to right, rgb(186,57,191), rgb(53, 133, 190));
+            border-image-slice: 1;
+        }
+
+        .benito-tunes {
+            display: flex; /* flexbox erstellen */
+            justify-content: space-between; /* x-achse anordnung */
+        }
+
+        .benito {
+            padding-left: 43px;
+            padding-right: 18px;
+        }
+        .help {
+            color:rgb(39, 37, 37);
+        }
+
+        .button-container {
+            display: flex; /* flexbox erstellen */
+            justify-content: space-between; /* x-achse anordnung */
+            padding-top: 15px;
+        }
+
+        .b-container {
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        a{
+            color:rgb(53, 133, 190);
+            text-decoration: none;
+        }
+
+        a:hover { /* veränderte eigenschaften, wenn man über dem link hovert */
+            color: rgb(186, 57, 191); /* farbe ändern */
+            text-decoration: underline; /* decoration ändern */
+            text-decoration-color: rgb(186, 57, 191); /* man kann auch die farbe der decoration ändern */
+        }
+
+        .button {
+            background-color: rgb(53, 133, 190); /* Hintergrundfarbe des Buttons */
+            color: #fff; /* Textfarbe des Buttons */
+            padding:15px 20px; /* Innenabstand des Buttons */
+            border: 3px solid rgb(186, 57, 191); /* Entfernt die Standard-Border des Buttons */
+            border-radius: 8px; /* Runde die Ecken des Buttons ab */
+            font-size: 30px; /* Schriftgröße des Buttons */
+            cursor: pointer; /* Zeigt an, dass der Button anklickbar ist */
+        }
+
+        .button:hover {
+            background-color:rgb(120, 80, 191)
+        }
+        .button:active {
+            background-color: rgb(186, 57, 191);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class = "top-part">
+        <h1 class = "headline">
+            QuickTunes <br>
+            <span class = "creator">
+                by Benito Manocchio
+            </span>      
+        </h1>
+        <img class = "logo"
+            src = "logo.jpeg">
+    </div>
+    <div class = "benito">
+        <div class = "benito-tunes">
+            <div class = "benito-text-container">
+                <h2 class = "benito-text">
+                    Benito
+                </h2>
+            </div>
+            <h2 class = "help">
+                never gonna give you up
+            </h2>
+        </div>
+
+        <div class ="button-container">
+            <div class = "b-container">
+                <button class = "button"
+                    data-sound="turnup.ogg"> Press Me! </button> <br>
+                <a href = "https://www.youtube.com/shorts/WQ9dZZOdWjQ">Turn Up</a>
+            </div>
+            <div class = "b-container">
+                <button class = "button"
+                    data-sound="orangensaft.ogg"> Press Me! </button> <br>
+                <a href = "https://www.youtube.com/shorts/WQ9dZZOdWjQ">Orangensaft</a>
+            </div>
+            <div class = "b-container">
+                <button class = "button"
+                    data-sound="turnup.ogg"> Press Me! </button> <br>
+                    <a href = "https://www.youtube.com/watch?v=PnAidv6JQQM">Bobobobo</a>
+            </div>
+            <div class = "b-container">
+                <button class = "button"
+                    data-sound="turnup.ogg"> Press Me! </button> <br>
+                    <a href = "https://www.youtube.com/watch?v=UGxr2tnzGS4">Haben wir noch Pepps dabei?</a>
+            </div>
+        </div>
+
+        <div class ="button-container">
+            <div class = "b-container">
+                <button class = "button"
+                    data-sound="turnup.ogg"> Press Me! </button> <br>
+                <a href = "https://www.youtube.com/watch?v=UGxr2tnzGS4">Keine? Gar keine? 2?</a>
+            </div>
+            <div class = "b-container">
+                <button class = "button"
+                    data-sound="orangensaft.ogg"> Press Me! </button> <br>
+                <a href = "https://www.youtube.com/shorts/GYGDdlR6rkk">Lüge</a>
+            </div>
+            <div class = "b-container">
+                <button class = "button"
+                    data-sound="turnup.ogg"> Press Me! </button> <br>
+                    <a href = "https://www.youtube.com/watch?v=PnAidv6JQQM">Backfeifen</a>
+            </div>
+            <div class = "b-container">
+                <button class = "button"
+                    data-sound="turnup.ogg"> Press Me! </button> <br>
+                    <a href = "https://www.tiktok.com/@jeremyfragrance/video/7255371886136216859?lang=de-DE">Düb dübdüdüdüb</a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <script src="funktionen.js"></script>
+</body>
+
+</html>
